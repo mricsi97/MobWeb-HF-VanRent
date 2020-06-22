@@ -1,6 +1,7 @@
 *.zip
 *.docx
 Databases/
+jegyzetek.txt
 
 # Built application files
 *.apk
