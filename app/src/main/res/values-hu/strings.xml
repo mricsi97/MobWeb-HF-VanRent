@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">VanRent</string>
+    <string name="currency_per_hour">%1$d Ft / óra</string>
+    <string name="card_payment_unavailable">A bankkártyás fizetés ideiglenesen nem üzemel.</string>
+    <string name="no_time_slots">A kiválasztott járműből nincs foglalható a megadott dátumon.</string>
+    <string name="successful_reservation">Foglalás sikeres.</string>
+    <string name="wrong_end_time">Leadási idő nem lehet később, mint %1$d:00.</string>
+    <string name="wrong_start_time">Átvételi idő nem lehet korábban, mint %1$d:00.</string>
+    <string name="wrong_times">Átvételi idő előbb kell legyen, mint a leadási idő.</string>
+    <string name="address">Cím</string>
+    <string name="cash">Készpénz</string>
+    <string name="city">Város</string>
+    <string name="credit_card">Bankkártya</string>
+    <string name="example_address">pl. Pál utca 25.</string>
+    <string name="example_city">pl. Budapest</string>
+    <string name="example_full_name">Kovács János</string>
+    <string name="example_email">pl. kovacsjanos@gmail.com</string>
+    <string name="full_name">Teljes név</string>
+    <string name="payment_method">Fizetési mód</string>
+    <string name="phone">Telefon</string>
+    <string name="rent">Bérlés</string>
+    <string name="reserve">Foglalás</string>
+    <string name="end_time">Leadási idő</string>
+    <string name="start_time">Átvételi idő</string>
+    <string name="set_time">Beállítás</string>
+    <string name="choose_payment">Kérem adjon meg egy fizetési módot.</string>
+    <string name="enter_address">Kérem adja meg a lakcímét.</string>
+    <string name="enter_city">Kérem adja meg a várost.</string>
+    <string name="enter_email">Kérem adja meg az email címét.</string>
+    <string name="enter_name">Kérem adja meg a teljes nevét.</string>
+    <string name="enter_phone">Kérem adja meg a telefonszámát.</string>
+    <string name="example_phone">pl. +36701234567</string>
+    <string name="furniture_van">Bútorok szállítására ajánlott.</string>
+    <string name="small_box_van">Kisebb dobozok szállítására ajánlott.</string>
+</resources>
