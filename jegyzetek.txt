@@ -1,0 +1,49 @@
+Add reservation sorted (not working):
+
+	public void addReservation(Reservation res){
+        int i = 0;
+        while(i < reservations.size()) {
+            if (reservations.get(i).startHour > res.startHour) {
+                reservations.add(i, res);
+                break;
+            }
+            i++;
+        }
+        if(i == reservations.size()) reservations.add(res);
+
+        notifyItemInserted(reservations.size() - 1);
+	}
+	
+
+Inflate timeslot layouts (wrong and not needed):
+
+    public void drawTimeSlots(ViewGroup parent){
+        for(int i = 0; i < timeSlots.size(); i++){
+            View itemView = LayoutInflater
+                    .from(context)
+                    .inflate(R.layout.time_slot, parent , false);
+        }
+    }
+	
+	
+VanListDatabase (merged entities to one database, this is irrelevant now):
+
+	import androidx.room.Database;
+	import androidx.room.RoomDatabase;
+	import androidx.room.TypeConverters;
+
+	import hu.bme.aut.vanrent.data.VanItem;
+	import hu.bme.aut.vanrent.data.VanItemDao;
+
+	import androidx.room.Database;
+
+	package hu.bme.aut.vanrent.data;
+
+	@Database(
+			entities = {VanItem.class},
+			version = 1
+	)
+	@TypeConverters(value = {VanItem.Category.class})
+	public abstract class VanListDatabase extends RoomDatabase {
+		public abstract VanItemDao vanItemDao();
+	}
